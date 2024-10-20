@@ -1,0 +1,46 @@
+.navbar {
+    background-color: #333; /* Dark background color */
+    color: white;           /* White text color */
+    padding: 1rem;         /* Padding around the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.container {
+    display: flex;                   /* Flexbox layout */
+    justify-content: space-between;  /* Space between logo and links */
+    align-items: center;             /* Center items vertically */
+}
+
+.logo {
+    font-size: 1.5rem;    /* Logo font size */
+    font-weight: bold;     /* Bold font for the logo */
+}
+
+.links {
+    display: flex;               /* Flexbox for links */
+    align-items: center;         /* Center links vertically */
+    gap: 1rem;                   /* Space between links */
+}
+
+.links a {
+    color: white;               /* Link color */
+    text-decoration: none;      /* Remove underline */
+    font-size: 1rem;            /* Font size */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.links a:hover {
+    color: #f0a500; /* Color change on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .links {
+        margin-top: 1rem; /* Add space above links */
+    }
+}
